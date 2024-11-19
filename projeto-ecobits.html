@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/imgs/frame-Inovaedu.webp" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+    <script defer src="assets/js/script.js"></script>
+    <title>InovaEdu - Transformando educação com tecnologia</title>
+
+    <!--------------------------- Link fancyapps CSS / JS------------------------------>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <!--------------------------- Link bootstrap CSS / JS------------------------------>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <!---------------------------- Link Swiper's CSS / JS------------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+
+  <body>
+    <!--====================================================================================================== 
+  HEADER 
+  =======================================================================================================-->
+
+    <header id="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">InovaEdu</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Início</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Projetos
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="projeto-Inovaedu.html"
+                        >InovaEdu</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="projeto-ecobits.html"
+                        >EcoBits</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <a
+                  rel="noopener"
+                  target="_blank"
+                  href="https://www.instagram.com/inovaedu.projeto?igsh=OGs0OWxyYmg2OWdo"
+                  class="MidiasSociais"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    fill="currentColor"
+                    class="bi bi-instagram"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                    />
+                  </svg>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!--====================================================================================================== 
+  CONTENT
+  =======================================================================================================-->
+
+      <!------------------- Bloco Banner Interna ------------------->
+
+      <section class="bl-BannerInterna">
+        <div
+          class="bl-BannerInterna__Content"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.6),
+                rgba(0, 0, 0, 0.6)
+              ),
+              url('assets/imgs/banner3.webp');
+          "
+        >
+          <div class="container">
+            <div class="breadcrumbs mb-4">
+                <a href="index.html" class="home"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M2.5 10.9384C2.5 9.71422 3.06058 8.55744 4.02142 7.79888L9.52142 3.45677C10.9747 2.30948 13.0253 2.30948 14.4786 3.45677L19.9786 7.79888C20.9394 8.55744 21.5 9.71422 21.5 10.9384V17.5C21.5 19.7091 19.7091 21.5 17.5 21.5H16C15.4477 21.5 15 21.0523 15 20.5V17.5C15 16.3954 14.1046 15.5 13 15.5H11C9.89543 15.5 9 16.3954 9 17.5V20.5C9 21.0523 8.55228 21.5 8 21.5H6.5C4.29086 21.5 2.5 19.7091 2.5 17.5L2.5 10.9384Z" stroke="#fff" stroke-width="2"></path>
+                </svg>Home
+                </a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                    <mask id="mask0_606_7237" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+                        <rect width="18" height="18" fill="#94191C" />
+                    </mask>
+                    <g mask="url(#mask0_606_7237)">
+                        <path d="M6.01875 16.5L4.6875 15.1688L10.8563 9L4.6875 2.83125L6.01875 1.5L13.5188 9L6.01875 16.5Z" fill="#fff" />
+                    </g>
+                </svg>
+                <a href="#" class="page">EcoBits</a>
+            </div>
+            <h1 class="Title">EcoBits: Campanha de conscientização do descarte correto do lixo eletrônico</h1>
+          </div>
+        </div>
+    </section>
+
+      <!------------------- Bloco Sobre ------------------->
+
+      <section class="bl-sobre rl-space">
+        <div class="container">
+          <div class="row">
+            <div class="bl-sobre__ContentLeft col-12 col-lg-6">
+              <span class="EffectSubtitle">Sobre o projeto</span>
+              <h2 class="Title">Introdução ao EcoBits</h2>
+              <p>
+                O EcoBits é uma iniciativa que visa explicar de forma simples e
+                dinâmica a a problemática do lixo eletronico, relatando a
+                importancia do descarte correto, mostrando projetos e programas
+                que fazem coleta e reciclagem entre outras topicos. Através das
+                palestras, esperamos que medidas sejam adotadas e colocadas em
+                práticas responsáveis, podendo reduzir os impactos negativos no
+                meio ambiente e na saúde pública, promovendo um futuro mais
+                sustentável.
+              </p>
+              <h5>Alguns conteúdos:</h5>
+              <ul class="ListSobre">
+                <li class="ItemSobre">Tipos de lixo eletrônico;</li>
+                <li class="ItemSobre">
+                  Importancia do descarte correto do lixo eletrônico.
+                </li>
+                <li class="ItemSobre">Locais de coleta e reciclagem;</li>
+              </ul>
+              <br>
+              <h5>Visite nosso site EcoBits</h5>
+              <a
+              rel="noopener"
+              target="_blank"
+              href="https://inovaeducacao.github.io/ecobits/"
+              class="rl-btn"
+              >EcoBits
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"></path>
+                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"></path>
+              </svg>
+              </a>
+            </div>
+            <div class="bl-sobre__ContentRight col-12 col-lg-6">
+              <figure>
+                <img src="assets/imgs/banner3.webp" alt="" />
+                <img src="assets/imgs/banner2.webp" alt="" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------------- Bloco Galeria ------------------->
+
+      <section class="bl-GaleriaInterna rl-space">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-8">
+              <div class="swiper GaleriaInternaSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <button
+                      data-fancybox="gallery"
+                      data-src="assets/imgs/projeto-ecobits1.webp"
+                    >
+                      <img src="assets/imgs/projeto-ecobits1.webp" alt="" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button
+                      data-fancybox="gallery"
+                      data-src="assets/imgs/projeto-ecobits2.webp"
+                    >
+                      <img src="assets/imgs/projeto-ecobits2.webp" alt="" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button
+                      data-fancybox="gallery"
+                      data-src="assets/imgs/projeto-ecobits3.webp"
+                    >
+                      <img src="assets/imgs/projeto-ecobits3.webp" alt="" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button
+                      data-fancybox="gallery"
+                      data-src="assets/imgs/projeto-ecobits4.webp"
+                    >
+                      <img src="assets/imgs/projeto-ecobits4.webp" alt="" />
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button
+                      data-fancybox="gallery"
+                      data-src="assets/imgs/projeto-ecobits5.webp"
+                    >
+                      <img src="assets/imgs/projeto-ecobits5.webp" alt="" />
+                    </button>
+                  </div>
+                </div>
+                <div
+                  class="GaleriaInterna-button-next swiper-button-next"
+                ></div>
+                <div
+                  class="GaleriaInterna-button-prev swiper-button-prev"
+                ></div>
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <span class="EffectSubtitle">Galeria</span>
+              <h2 class="Title">Registro da visita</h2>
+              <p>
+                No dia 17 de maio foi feito uma visita a escola EEEP Comendador Miguel Gurgel, 
+                onde promovemos uma palestra especial sobre tecnologia, 
+                relacionada a lixo eletrônico.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--====================================================================================================== 
+  FOOTER
+  =======================================================================================================-->
+    </main>
+
+    <section class="bl-button-top">
+      <button class="button-top" id="back-to-top" onclick="scrollToTop()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          fill="currentColor"
+          class="bi bi-arrow-up-circle"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"
+          />
+        </svg>
+      </button>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__principal">
+        <div class="container">
+          <div class="footer__content">
+            <a href="" class="footer__logo">InovaEdu</a>
+            <div class="footer__secundaria">
+              <p class="footer__p">Redes Socias:</p>
+              <div class="social">
+                <a
+                  rel="noopener"
+                  target="_blank"
+                  href="https://www.instagram.com/ecobits.projeto/?igsh=M25jMWNwZ2prNHB2"
+                  class="MidiasSociais"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    fill="currentColor"
+                    class="bi bi-instagram"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                    />
+                  </svg>
+                </a>
+                <!-- <a class="footer__a" href="#nada">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg>
+          </a>
+          <a class="footer__a" href="#nada">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+              <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+            </svg>
+          </a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div__copyright">
+        <div class="container">
+          <p class="copyright">
+            &copy; InovaEdu - Todos os direitos reservados
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

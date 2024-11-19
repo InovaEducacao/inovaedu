@@ -1,0 +1,290 @@
+/*============================================================================================================= 
+CONTENT - HOME
+=============================================================================================================*/
+
+/*---------------------------------- Bloco Banner ------------------------------------*/
+.bl-banner {
+  position: relative;
+  padding: 0 10px;
+  .BannerSwiper {
+    width: 100%;
+    height: 100%;
+  }
+  figure {
+    margin: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(50%);
+      height: 85dvh;
+      border-radius: 50px;
+    }
+  }
+  .container {
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .ConteudoBanner {
+    color: #fff;
+    max-width: 600px;
+    @media only screen and (max-width: 768px) {
+      max-width: 90%;
+    }
+    .ConteudoBanner__Subtitle {
+      background: var(--corSecundaria);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+      font-weight: 700;
+      font-size: 24px;
+    }
+    .ConteudoBanner__Title {
+      font-size: 48px;
+      font-weight: 700;
+      @media only screen and (max-width: 768px) {
+        font-size: 32px;
+      }
+    }
+    .ConteudoBanner__Texto {
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+  .swiper-pagination {
+    bottom: 40% !important;
+    left: 47% !important;
+    transition: 0.3 ease-in-out !important;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    @media only screen and (max-width: 768px) {
+      left: 45% !important;
+    }
+    /* &::before{
+      content: "";
+      position: absolute;
+      background: #fff;
+      width: 2px;
+      height: 50px;
+      top: 0;
+    } */
+  }
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 15px;
+    color: #fff;
+    opacity: 1;
+    background: none;
+    transition: 0.3 ease-in-out !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+    margin: 5px 0 !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: none;
+    transition: 0.3 ease-in-out !important;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 15px;
+  }
+  .scroll-bottom {
+    position: absolute;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+  }
+  .scroll-bottom #scroll-down-animation {
+    position: absolute;
+    margin: 0 auto;
+    bottom: 5px;
+    z-index: 1;
+  }
+  .scroll-bottom #scroll-down-animation .mouse {
+    display: block;
+    border-radius: 50px;
+    border: 3px solid var(--corPrimaria);
+    height: 48px;
+    width: 30px;
+    position: relative;
+    bottom: 0;
+  }
+  .scroll-bottom #scroll-down-animation .mouse .move {
+    position: absolute;
+    background-color: var(--corPrimaria);
+    height: 12px;
+    width: 4px;
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-animation: move 2s linear infinite;
+    animation: move 2s linear infinite;
+  }
+}
+@keyframes move {
+  0% {
+    transform: translate(-50%, 5px);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%, 20px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, 26px);
+    opacity: 0;
+  }
+}
+
+/*---------------------------------- Bloco Sobre ------------------------------------*/
+.bl-sobre {
+  position: relative;
+  z-index: 1;
+  .row{
+    @media only screen and (max-width: 1023px) {
+      gap: 30px;
+    }
+  }
+  .bl-sobre__ContentRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (min-width: 1023px) {
+      padding-left: 50px;
+    }
+    figure {
+      position: relative;
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      /* &::before{
+        content: "";
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-self: center;
+        background: #fff;
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+      } */
+      img {
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        filter: unset;
+        box-shadow: 0 4px 21px 0 rgba(0,0,0,.15);
+        transition: 0.3s ease-out;
+        border-radius: 0 50px 0 50px;
+        object-fit: cover;
+        &:nth-child(2), &:nth-child(3) {
+          border-radius: 50px 0 50px 0;
+        }
+      }
+    }
+  }
+}
+
+/*---------------------------------- Bloco Projetos ------------------------------------*/
+.bl-projetos {
+  .bl-projetos__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    p {
+      margin: 0;
+      max-width: 300px;
+    }
+  }
+  .rl-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    overflow: hidden;
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  .rl-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 10px !important;
+    figure {
+      margin: 0;
+      img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        filter: brightness(60%);
+        transition: 0.3s ease-out;
+        z-index: 1;
+        transform: scale(1);
+        &:hover {
+          transform: scale(1.1);
+          transition: 0.3s ease-out;
+          z-index: 999;
+        }
+      }
+    }
+    .rl-card__Conteudo {
+      position: absolute;
+      margin: 0 auto;
+      bottom: 0;
+      padding: 24px;
+      background: #fff;
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      left: 0;
+      right: 0;
+      margin-bottom: 24px;
+      border-radius: 10px;
+      box-shadow: 0 4px 21px 0 rgba(0, 0, 0, .15);
+      .title{
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--corPrimaria);
+        display: flex;
+        margin: 0;
+      }
+      svg{
+        color: #40af6d;
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
