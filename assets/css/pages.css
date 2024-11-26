@@ -32,13 +32,16 @@
   .bl-sobre__ContentRight {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     @media only screen and (min-width: 1023px) {
       padding-left: 50px;
     }
     figure {
       position: relative;
       margin: 0;
+      @media only screen and (min-width: 1023px) {
+        margin-top: 50px;
+      }
       img {
         border-radius: 50px;
         width: 75%;
